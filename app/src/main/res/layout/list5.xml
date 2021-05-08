@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/gradient">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="9dp"
+        app:cardCornerRadius="2dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/list1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/rto_img"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:src="@drawable/rto"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:padding="3dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:text="Aadhar No :"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="14dp"
+                    android:padding="3dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:text="Name :"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="14dp"
+                    android:padding="3dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:text="Mobile :"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="14dp"
+                    android:padding="3dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:text="Email :"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="14dp"
+                    android:padding="3dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:text="Address :"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="14dp"
+                    android:padding="3dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:text="Vehicle No :"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="14dp"
+                    android:padding="3dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:text="Vehicle Chasis No :"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="14dp"
+                    android:padding="3dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:text="Vehicle Class :"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="14dp"
+                    android:padding="3dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:text="Vehicle Model :"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="14dp"
+                    android:padding="3dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:text="Fuel Type :"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="14dp"
+                    android:padding="3dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:text="Registration Date :"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="14dp"
+                    android:padding="3dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:text="Registration Location :"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="14dp"
+                    android:padding="3dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:text="Insurance Upto :"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="14dp"
+                    android:padding="3dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:text="PUC Upto :"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="2">
+
+                <TextView
+                    android:id="@+id/c_aadhar_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:padding="3dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:text="Aadhar"/>
+
+                <TextView
+                    android:id="@+id/c_Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="14dp"
+                    android:padding="3dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:text="Name"/>
+
+                <TextView
+                    android:id="@+id/c_Mob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="14dp"
+                    android:padding="3dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:text="Mobile"/>
+
+                <TextView
+                    android:id="@+id/c_Email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="14dp"
+                    android:padding="3dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:text="Mobile"/>
+
+                <TextView
+                    android:id="@+id/c_Address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="14dp"
+                    android:padding="3dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:text="Address"/>
+
+                <TextView
+                    android:id="@+id/c_VNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="14dp"
+                    android:padding="3dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:text="VNo"/>
+
+                <TextView
+                    android:id="@+id/c_VCNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="14dp"
+                    android:padding="3dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:text="VCNo "/>
+
+                <TextView
+                    android:id="@+id/c_Vclass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="14dp"
+                    android:padding="3dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:text="VClass "/>
+
+                <TextView
+                    android:id="@+id/c_Vmodel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="14dp"
+                    android:padding="3dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:text="VModel "/>
+
+                <TextView
+                    android:id="@+id/c_fuel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="14dp"
+                    android:padding="3dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:text="Fuel "/>
+
+                <TextView
+                    android:id="@+id/c_Rdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="14dp"
+                    android:padding="3dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:text="RDate "/>
+
+                <TextView
+                    android:id="@+id/c_Rloc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="14dp"
+                    android:padding="3dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:text="RLocation "/>
+
+                <TextView
+                    android:id="@+id/c_insurance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="14dp"
+                    android:padding="3dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:text="Insurance "/>
+
+                <TextView
+                    android:id="@+id/c_puc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="14dp"
+                    android:padding="3dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:text="PUC "/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

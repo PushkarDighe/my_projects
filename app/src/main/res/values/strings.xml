@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">RTO_Login</string>
+
+    <string name="adhar">Aadhar Number</string>
+
+    <string-array name="fuel">
+        <item>Petrol</item>
+        <item>Diesel</item>
+        <item>LPG</item>
+        <item>Battery</item>
+    </string-array>
+</resources>

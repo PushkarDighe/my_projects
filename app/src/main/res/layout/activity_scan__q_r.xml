@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Scan_QR"
+    android:orientation="vertical"
+    android:background="@drawable/back">
+
+    <include layout="@layout/toolbar_fine"/>
+
+    <ProgressBar
+        android:layout_height="10dp"
+        android:layout_width="50dp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:id="@+id/pg_fine"/>
+
+    <androidx.core.widget.ContentLoadingProgressBar
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/pregress_bar"
+        android:indeterminate="true"
+        android:layout_marginTop="5dp"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:id="@+id/id_hide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittextborder_new"
+                android:layout_margin="5dp">
+                <EditText
+                    android:id="@+id/vid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Vehicle id"
+                    android:textColorHint="@color/black"
+                    android:textColor="@color/black"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/num_hide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittextborder_new"
+                android:layout_margin="5dp">
+                <EditText
+                    android:id="@+id/v_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Vehicle Number"
+                    android:textColorHint="@color/black"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:inputType="textCapCharacters"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="search"
+                android:textColor="@color/white"
+                android:background="@color/design_default_color_primary"/>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Aadhar Number :"
+                    android:fontFamily="sans-serif-black"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittextborder_new"
+                    android:layout_margin="5dp">
+                    <EditText
+                        android:id="@+id/txt_adhar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Aadhar Number"
+                        android:textColorHint="@color/black"
+                        android:textColor="@color/black"
+                        android:editable="false"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name :"
+                    android:fontFamily="sans-serif-black"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittextborder_new"
+                    android:layout_margin="5dp">
+                    <EditText
+                        android:id="@+id/txt_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Name"
+                        android:textColorHint="@color/black"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile :"
+                    android:fontFamily="sans-serif-black"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittextborder_new"
+                    android:layout_margin="5dp">
+                    <EditText
+                        android:id="@+id/txt_mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Mobile"
+                        android:textColorHint="@color/black"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Email :"
+                    android:fontFamily="sans-serif-black"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittextborder_new"
+                    android:layout_margin="5dp">
+                    <EditText
+                        android:id="@+id/txt_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Email"
+                        android:textColorHint="@color/black"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Address :"
+                    android:fontFamily="sans-serif-black"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittextborder_new"
+                    android:layout_margin="5dp">
+                    <EditText
+                        android:id="@+id/txt_addr"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Address"
+                        android:textColorHint="@color/black"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Vehicle Number :"
+                    android:fontFamily="sans-serif-black"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittextborder_new"
+                    android:layout_margin="5dp">
+                    <EditText
+                        android:id="@+id/txt_vnumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint=" Vehicle Number"
+                        android:textColorHint="@color/black"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Vehicle Chassis Number :"
+                    android:fontFamily="sans-serif-black"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittextborder_new"
+                    android:layout_margin="5dp">
+                    <EditText
+                        android:id="@+id/txt_chasis_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint=" Vehicle Chassis Number"
+                        android:textColorHint="@color/black"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Vehicle Class :"
+                    android:fontFamily="sans-serif-black"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittextborder_new"
+                    android:layout_margin="5dp">
+                    <EditText
+                        android:id="@+id/txt_vclass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint=" Vehicle Class"
+                        android:textColorHint="@color/black"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Vehicle Model :"
+                    android:fontFamily="sans-serif-black"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittextborder_new"
+                    android:layout_margin="5dp">
+                    <EditText
+                        android:id="@+id/txt_vmodel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint=" Vehicle Model"
+                        android:textColorHint="@color/black"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Fuel Type :"
+                    android:fontFamily="sans-serif-black"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittextborder_new"
+                    android:layout_margin="5dp">
+                    <EditText
+                        android:id="@+id/txt_fule_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint=" Fuel Type"
+                        android:textColorHint="@color/black"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Registration Date :"
+                    android:fontFamily="sans-serif-black"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittextborder_new"
+                    android:layout_margin="5dp">
+                    <EditText
+                        android:id="@+id/txt_reg_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Registration Date"
+                        android:textColorHint="@color/black"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Registration Location :"
+                    android:fontFamily="sans-serif-black"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittextborder_new"
+                    android:layout_margin="5dp">
+                    <EditText
+                        android:id="@+id/txt_reg_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Registration Location"
+                        android:textColorHint="@color/black"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Insurance Validity :"
+                    android:fontFamily="sans-serif-black"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittextborder_new"
+                    android:layout_margin="5dp">
+                    <EditText
+                        android:id="@+id/txt_insurance_upto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Insurance Upto"
+                        android:textColorHint="@color/black"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PUCC Validity :"
+                    android:fontFamily="sans-serif-black"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittextborder_new"
+                    android:layout_margin="5dp">
+                    <EditText
+                        android:id="@+id/txt_pucc_upto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="PUCC Upto"
+                        android:textColorHint="@color/black"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+</LinearLayout>
